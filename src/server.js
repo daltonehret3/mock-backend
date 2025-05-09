@@ -9,6 +9,7 @@ export const startServer = (options = {}) => {
     const {
         port = 3000,
         name,
+        yamlRoute = './mock.yml',
     } = options;
 
     const app = express();
@@ -17,7 +18,7 @@ export const startServer = (options = {}) => {
 
     const httpServer = http.createServer(app);
 
-    const routes = readYamlFile(); 
+    const routes = readYamlFile(yamlRoute); 
 
     applyControllers(app, routes.rest);
 

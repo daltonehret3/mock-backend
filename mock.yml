@@ -1,7 +1,7 @@
 rest:
   test:
     GET:
-      route: "/{id}"
+      route: "/:id"
       params:
         id: String
     POST:
@@ -9,6 +9,9 @@ rest:
       body:
         name: String
         email: String
+  test/:id/projects:
+    GET:
+      route: "/"
   another:
     GET:
       route: "/"

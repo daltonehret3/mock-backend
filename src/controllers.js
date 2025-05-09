@@ -4,6 +4,7 @@ export const applyControllers = (app, routeDefs) => {
     const parentRoutes = Object.keys(routeDefs);
 
     parentRoutes.forEach(route => {
+        console.log({route});
         const element = routeDefs[route];
         const children = Object.keys(element);
 
