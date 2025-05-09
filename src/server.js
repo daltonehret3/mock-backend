@@ -20,6 +20,7 @@ export const startServer = (options = {}) => {
 
     const routes = readYamlFile(yamlRoute); 
 
+    console.log({models: JSON.stringify(routes.models)});
     applyControllers(app, routes.rest);
 
     const server = httpServer.listen(port, () => {

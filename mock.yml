@@ -9,7 +9,16 @@ rest:
       body:
         name: String
         email: String
+    
   another:
     GET:
       route: "/"
-
+models:
+  test:
+    id:
+      unique: true
+      type: UUID
+    name: 
+      type: String
+    email:
+      type: Email
