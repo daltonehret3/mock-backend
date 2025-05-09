@@ -9,9 +9,6 @@ rest:
       body:
         name: String
         email: String
-  test/:id/projects:
-    GET:
-      route: "/"
   another:
     GET:
       route: "/"
