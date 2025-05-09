@@ -1,24 +1,30 @@
 {
-  "name": "mock-backend",
-  "version": "1.0.0",
-  "description": "Framework for Mocking Backend Requests",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daltonehret3/mock-backend.git"
-  },
-  "keywords": [
-    "Mock",
-    "Backend",
-    "Requests"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daltonehret3/mock-backend/issues"
-  },
-  "homepage": "https://github.com/daltonehret3/mock-backend#readme"
+    "name": "mock-backend",
+    "version": "1.0.0",
+    "description": "Framework for Mocking Backend Requests",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node ./index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daltonehret3/mock-backend.git"
+    },
+    "keywords": [
+        "Mock",
+        "Backend",
+        "Requests"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/daltonehret3/mock-backend/issues"
+    },
+    "homepage": "https://github.com/daltonehret3/mock-backend#readme",
+    "dependencies": {
+        "express": "^5.1.0",
+        "js-yaml": "^4.1.0"
+    }
 }

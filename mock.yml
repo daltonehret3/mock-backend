@@ -1,0 +1,15 @@
+rest:
+  test:
+    GET:
+      route: "/{id}"
+      params:
+        id: String
+    POST:
+      route: "/"
+      body:
+        name: String
+        email: String
+  another:
+    GET:
+      route: "/"
+
